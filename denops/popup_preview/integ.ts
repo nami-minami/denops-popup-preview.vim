@@ -123,7 +123,7 @@ export async function searchUserdata(
   }
 
   // vim-lsp
-  console.log(decoded);
+  console.log(`decoded: ${decoded}`);
   if ("vim-lsp/key" in decoded) {
     const lspitem = await denops.call(
       "lsp#omni#get_managed_user_data_from_completed_item",
