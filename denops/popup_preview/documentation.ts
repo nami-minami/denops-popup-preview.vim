@@ -111,7 +111,7 @@ export class DocHandler {
       this.showFloating(denops, cache.lines, config);
       return;
     }
-    denops.call("ehomsg", `item: ${item}`);
+    denops.call("echomsg", `item: ${item}`);
     const maybe = await searchUserdata(denops, item, config, info.selected);
     if (!maybe.found) {
       this.closeWin(denops);
